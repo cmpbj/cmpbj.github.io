@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,100&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a20a87c224.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="app.css">
+    <title>CarlosMagno</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div>
+            <img src="ícone.png" alt="base de dados ícones - Base de dados
+                ícones criados por phatplus - Flaticon" width="150px" height="100px">
+            <p>Base de dados
+                ícones criados por phatplus - Flaticon</p>
+        </div>
+
+        <ul>
+            <li>
+                <a target="_black" href="https://github.com/cmpbj">github</a>
+            </li>
+            <li>
+                <a target="_black" href="https://wa.me/7199024588">me liga!</a>
+            </li>
+            <li>
+                <a target="_black" href="mailto:magnocarlos3232@gmail.com">email</a>
+            </li>
+        </ul>
+
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Carlos Magno Barreto</h1>
+                <h5>Analista de Dados Jr</h5>
+            </div>
+
+            <div onclick=displayAbout() id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+
+            <div style="display: none" id="about">
+                <p>Sou estudante jornalismo na Universidade Federal da Bahia (UFBA), cursando o útilmo semestre. Desde o
+                    início da graduação, despertei o interesse por tecnologia e pela área de jornalismo de dados, algo
+                    que me levou à <b><a target="_black" class="outrosLinks"
+                            href="https://www.correio24horas.com.br/noticia/nid/estudantes-participam-de-workshop-como-parte-do-premio-correio-de-futuro/">semi-final
+                            do Prêmio Correio de Futuro</a></b>, projeto do Jornal Correio, que envolveu
+                    ideias para inovar o jornalismo. De lá para cá, tenho buscado mais conhecimentos envolvendo a área
+                    de dados, realizando cursos na Escola de Dados, como Dados 360 e Python para Inovação Cívica. Hoje,
+                    estou cursando 'Profissão: Analista de Dados', oferecido pela Escola Britânica de Artes Criativas e
+                    Tecnologia (EBAC). Possuo conhecimento intermediário nos pacotes Pandas, Seaborn, Numpy, Selenium,
+                    scikit-learn
+                    e muita disposição para aprender ainda mais. Recentemente fui aprovado no programa de formação de
+                    desenvolvedores, Hiring Coders, promovido pela VTEX em parceria com a Gama Academy.</p>
+
+                <div>
+                    <h3>Projetos</h3>
+                </div>
+
+                <div class="project">
+                    <div>
+                        <img src="dashboar-powerbi.jpeg">
+                        <div class="paragrafo">
+                            <p>A partir do curso 'Microsoft Power BI Para Data Science, Versão 2.0', oferecido pela Data
+                                Science Academy, tenho produzido uma série de dashboards interativos para análise e
+                                visualização de dados. O curso proporciona um amplo conhecimento de como tratar,
+                                analisar, gerar insights a partir de dados e, sobretudo, a responder perguntas de
+                                negócios que auxiliem em tomadas de decisão</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="projeto-logistica.png">
+                        <div class="paragrafo">
+                            <p>Este <a target="_black" class="outrosLinks"
+                                    href="https://www.kaggle.com/code/carlosmagnopbjunior/an-lise-explorat-ria-de-dados-de-log-stica/notebook">notebook</a>
+                                foi meu primeiro projeto de análise exploratória de dados com Python e foi
+                                realizado a partir do curso
+                                Profissão: Analista de Dados, da Escola Britânica de Artes Criativas e Tecnologia
+                                (EBAC). O
+                                desafio era realizar uma análise exploratória de dados fornecidos pela empresa de
+                                logística
+                                Loggi, utilizando bibliotecas Python como Pandas, Numpy, Seaborn e GeoPandas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="form" action="" id="email">
+                    <div>
+                        <p>Deixe seu contato! :)</p>
+                    </div>
+
+                    <div>
+                        <input id="email" type="email" placeholder="seu melhor email">
+                        <button>Enviar</button>
+                    </div>
+
+                </form>
+
+        </section>
+
+
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
