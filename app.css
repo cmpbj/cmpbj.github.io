@@ -140,11 +140,10 @@ header ul li a:hover {
 }
 
 
-.paragrafo {
+.paragrafo p {
     max-width: 600px;
     max-height: 114px;
     margin-top: 10px;
-    padding: 0 auto;
 }
 
 .outrosLinks {
@@ -164,6 +163,10 @@ header ul li a:hover {
     padding: 10px;
     margin-top: 60px;
     margin-bottom: 30px;
+}
+
+.form p {
+    text-align: center;
 }
 
 .form input {
@@ -198,6 +201,11 @@ header ul li a:hover {
     .form {
         width: 100%;
     }
+
+    .project {
+        display: block;
+    }
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -214,6 +222,39 @@ header ul li a:hover {
         text-align: justify;
     }
 
+    .project {
+        background-color: #ffffff10;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        margin: 30px 20px;
+        display: block;
+        max-width: 100%;
+    }
 
+    .project img {
+        max-width: 95%;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+
+    .paragrafo p {
+        max-width: 100%;
+        max-height: 80%;
+        text-align: left;
+    }
+
+    .form {
+        width: 95%;
+        margin: 0 auto;
+        border: thick double whitesmoke;
+        padding: 5px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .form p {
+        position: relative;
+        left: 50px;
+    }
 
 }
