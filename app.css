@@ -151,13 +151,11 @@ header ul li a:hover {
 
 .flex {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .flex div {
-    border: 1px solid whitesmoke;
-    border-radius: 3px;
     padding: 10px;
     margin: 10px;
 }
